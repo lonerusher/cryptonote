@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 2.8.6)
 
 set(VERSION "0.1")
-# $Format:Packaged from commit %H%nset(COMMIT %h)%nset(REFS "%d")$
+# Packaged from commit dea204125bc6e9eaa8eef4b82be5ce6706320976
+set(COMMIT dea2041)
+set(REFS " (HEAD -> master)")
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set(CMAKE_CONFIGURATION_TYPES Debug RelWithDebInfo Release CACHE TYPE INTERNAL)
@@ -12,7 +14,7 @@ enable_testing()
 # copy CTestCustom.cmake to build dir to disable long running tests in 'make test'
 configure_file(${CMAKE_SOURCE_DIR}/CTestCustom.cmake ${CMAKE_BINARY_DIR})
 
-project(CryptoNote)
+project(GenerationX)
 
 include_directories(include src external "${CMAKE_BINARY_DIR}/version")
 if(APPLE)
